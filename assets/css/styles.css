@@ -47,7 +47,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    background: #ffffffe6;
+    background: #ffffffc8;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
