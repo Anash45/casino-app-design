@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mobile Tabs</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+
+    <body>
+        <main class="wrapper">
+            <div class="container">
+                <section id="casino" class="tab-content active">
+                    <div class="featured pg-sec">
+                        <h2 class="sec-title">Featured</h2>
+                        <div class="carousel featured-carousel">
+                            <div>
+                                <a href="https://example.com/1" target="_blank">
+                                    <img src="./assets/images/carousel-sample-1.jpg" class="fc-img" alt="Image 1">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://example.com/1" target="_blank">
+                                    <img src="./assets/images/carousel-sample-2.webp" class="fc-img" alt="Image 1">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items-sec pg-sec">
+                        <h2 class="sec-title">Best Online Casinos: Our Picks</h2>
+                        <div class="items">
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-1.jpg" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="9">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">9</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-1.jpg" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="9.7">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">9.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-1.jpg" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="7.7">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">7.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-1.jpg" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="5.9">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">5.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="offers" class="tab-content">
+                    <div class="featured pg-sec">
+                        <h2 class="sec-title">Featured</h2>
+                        <div class="carousel featured-carousel">
+                            <div>
+                                <a href="https://example.com/1" target="_blank">
+                                    <img src="./assets/images/carousel-sample-1.jpg" class="fc-img" alt="Image 1">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://example.com/1" target="_blank">
+                                    <img src="./assets/images/carousel-sample-2.webp" class="fc-img" alt="Image 1">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items-sec pg-sec">
+                        <h2 class="sec-title">Best Online Offers: Our Picks</h2>
+                        <div class="items">
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-2.jpg" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="9">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">9</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-2.jpg" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="9.7">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">9.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-2.jpg" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="7.7">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">7.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-2.jpg" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="5.9">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">5.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="vip" class="tab-content">
+                    <div class="featured pg-sec">
+                        <h2 class="sec-title">Featured</h2>
+                        <div class="carousel featured-carousel">
+                            <div>
+                                <a href="https://example.com/1" target="_blank">
+                                    <img src="./assets/images/carousel-sample-1.jpg" class="fc-img" alt="Image 1">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://example.com/1" target="_blank">
+                                    <img src="./assets/images/carousel-sample-2.webp" class="fc-img" alt="Image 1">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items-sec pg-sec">
+                        <h2 class="sec-title">Best Online VIP: Our Picks</h2>
+                        <div class="items">
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-3.webp" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="9">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">9</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-3.webp" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="9.7">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">9.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-3.webp" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="7.7">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">7.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-3.webp" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="5.9">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">5.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="packages" class="tab-content">
+                    <div class="featured pg-sec">
+                        <h2 class="sec-title">Featured</h2>
+                        <div class="carousel featured-carousel">
+                            <div>
+                                <a href="https://example.com/1" target="_blank">
+                                    <img src="./assets/images/carousel-sample-1.jpg" class="fc-img" alt="Image 1">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://example.com/1" target="_blank">
+                                    <img src="./assets/images/carousel-sample-2.webp" class="fc-img" alt="Image 1">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items-sec pg-sec">
+                        <h2 class="sec-title">Best Online Packages: Our Picks</h2>
+                        <div class="items">
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-4.jpg" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="9">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">9</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-4.jpg" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="9.7">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">9.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-4.jpg" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="7.7">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">7.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" onclick="openDetailsPopup(event)">
+                                <div class="item-img">
+                                    <img src="./assets/images/sample-logo-4.jpg" alt="Item Logo">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-name">Stake.com</h3>
+                                    <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                    <span class="item-badge">Hot Popular</span>
+                                </div>
+                                <div class="get-div">
+                                    <a href="#" class="get-btn">Get</a>
+                                    <div class="star-rating" data-rating="5.9">
+                                        <div class="stars-outer">
+                                            <div class="stars-inner"></div>
+                                        </div>
+                                        <span class="rating-text">5.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="item-details-popup" id="item-details-popup">
+                    <div class="back" onclick="hidePopup()"><i class="fa fa-chevron-left"></i><span>Back</span></div>
+                    <div class="idp">
+                        <div class="idp-top">
+                            <div class="item-img">
+                                <img src="./assets/images/sample-logo-1.jpg" alt="Item Logo">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-name">Stake.com</h3>
+                                <p class="item-desc">Deposit $20 - Get 50 Free Spins + 10 Ultra Spins</p>
+                                <a href="#" class="get-btn">Get</a>
+                            </div>
+                        </div>
+                        <div class="idp-numbers">
+                            <div class="idp-number">
+                                <span class="idpn-name">Bonuses</span>
+                                <span class="idpn-rating">10</span>
+                                <div class="star-rating" data-rating="10">
+                                    <div class="stars-outer">
+                                        <div class="stars-inner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="idp-border"></div>
+                            <div class="idp-number">
+                                <span class="idpn-name">Graphics</span>
+                                <span class="idpn-rating">10</span>
+                                <div class="star-rating" data-rating="10">
+                                    <div class="stars-outer">
+                                        <div class="stars-inner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="idp-border"></div>
+                            <div class="idp-number">
+                                <span class="idpn-name">Game Variety</span>
+                                <span class="idpn-rating">10</span>
+                                <div class="star-rating" data-rating="10">
+                                    <div class="stars-outer">
+                                        <div class="stars-inner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="idp-border"></div>
+                            <div class="idp-number">
+                                <span class="idpn-name">Deposits / Withdrawal</span>
+                                <span class="idpn-rating">10</span>
+                                <div class="star-rating" data-rating="10">
+                                    <div class="stars-outer">
+                                        <div class="stars-inner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="idp-border"></div>
+                            <div class="idp-number">
+                                <span class="idpn-name">Customer Service</span>
+                                <span class="idpn-rating">10</span>
+                                <div class="star-rating" data-rating="10">
+                                    <div class="stars-outer">
+                                        <div class="stars-inner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel featured-carousel">
+                            <div>
+                                <a href="https://example.com/1" target="_blank">
+                                    <img src="./assets/images/carousel-sample-1.jpg" class="fc-img" alt="Image 1">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://example.com/1" target="_blank">
+                                    <img src="./assets/images/carousel-sample-2.webp" class="fc-img" alt="Image 1">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="idp-bottom">
+                            <div class="min-deposit">
+                                <h3>Minimum Deposit: </h3>
+                                <h3 class="deposit">20&dollar;</h3>
+                            </div>
+                            <div class="devices">
+                                <p>Devices: </p>
+                                <img src="./assets/images/smartphone.png" alt="Mobile" class="mobile">
+                                <img src="./assets/images/tablet.png" alt="tablet" class="tablet">
+                                <img src="./assets/images/laptop.png" alt="laptop" class="laptop">
+                            </div>
+                            <div class="bonus">
+                                <a href="#" class="bonus-btn">Claim Your Bonus</a>
+                                <p class="bonus-note">*NEW ACCOUNTS ONLY</p>
+                            </div>
+                            <div class="review-div">
+                                <h2 class="review-title">Jackpot City Casino Review</h2>
+                                <p class="review-date">Updated: 06-29-2024</p>
+                                <p class="review-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Quaerat provident ab, unde numquam asperiores totam consequatur dolor itaque
+                                    nesciunt, assumenda porro velit debitis ratione minima voluptatibus, officiis
+                                    explicabo voluptatum. Sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Illo quae nemo voluptas fugit asperiores officiis unde dolores quam aperiam aut modi
+                                    impedit nulla odit nihil ipsa, consectetur iste sequi temporibus. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-bar">
+                <a href="#casino" class="nav-link active" data-tab="casino"><img
+                        src="./assets/images/casino-icon-black.png" alt="Nav Icon" class="nav-icon normal-icon"><img
+                        src="./assets/images/casino-icon-blue.png" alt="Nav Icon"
+                        class="nav-icon hover-icon"><span>Casino</span></a>
+                <a href="#offers" class="nav-link" data-tab="offers"><img src="./assets/images/dices-icon-black.png"
+                        alt="Nav Icon" class="nav-icon normal-icon"><img src="./assets/images/dices-icon-blue.png"
+                        alt="Nav Icon" class="nav-icon hover-icon"><span>Offers</span></a>
+                <a href="#vip" class="nav-link" data-tab="vip"><img src="./assets/images/diamond-icon-black.png"
+                        alt="Nav Icon" class="nav-icon normal-icon"><img src="./assets/images/diamond-icon-blue.png"
+                        alt="Nav Icon" class="nav-icon hover-icon"><span>VIP</span></a>
+                <a href="#packages" class="nav-link" data-tab="packages"><img src="./assets/images/hand-icon-black.png"
+                        alt="Nav Icon" class="nav-icon normal-icon"><img src="./assets/images/hand-icon-blue.png"
+                        alt="Nav Icon" class="nav-icon hover-icon"><span>Packages</span></a>
+            </nav>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+
+</html>
