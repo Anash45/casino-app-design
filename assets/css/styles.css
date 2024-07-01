@@ -69,7 +69,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 0px;
 }
 
 .nav-link.active,
@@ -88,7 +88,7 @@ body {
 }
 
 .nav-icon {
-    height: 30px;
+    height: 25px;
 }
 
 
@@ -97,12 +97,12 @@ body {
 }
 
 .sec-title {
-    font-size: 26px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .pg-sec {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .fc-img {
@@ -115,7 +115,7 @@ body {
 .items{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 .item {
     width: 100%;

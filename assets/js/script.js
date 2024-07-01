@@ -32,11 +32,11 @@ $(document).ready(function () {
 
 
 function hidePopup() {
-    $('#item-details-popup').fadeOut();
+    $('#item-details-popup').hide();
 }
 
 function showPopup() {
-    $('#item-details-popup').fadeIn();
+    $('#item-details-popup').show();
 }
 
 function openDetailsPopup(e) {
