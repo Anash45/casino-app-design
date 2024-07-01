@@ -115,7 +115,7 @@ body {
 .items{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 .item {
     width: 100%;
@@ -123,6 +123,20 @@ body {
     align-items: center;
 }
 
+.item-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#packages .item{
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#packages .fc-img{
+    aspect-ratio: 5/2;
+}
 .item-img img {
     vertical-align: middle;
     width: 80px;
@@ -149,7 +163,7 @@ body {
     color: #acacac;
     display: -webkit-box;            /* Display as a flexible box (necessary for -webkit-line-clamp) */
     -webkit-box-orient: vertical;    /* Set the orientation to vertical */
-    -webkit-line-clamp: 1;           /* Limit to 1 line */
+    -webkit-line-clamp: 2;           /* Limit to 1 line */
     overflow: hidden;                /* Hide any overflowing content */
     text-overflow: ellipsis;   
 }
@@ -211,11 +225,11 @@ body {
     display: inline-block;
     position: relative;
     font-size: 12px; /* Adjust size as needed */
-    color: transparent; /* Light gray for empty stars */
+    color: #ACACAC; /* Light gray for empty stars */
 }
 
 .stars-outer::before {
-    content: '★★★★★'; /* 5 stars */
+    content: '☆☆☆☆☆'; /* 5 stars */
 }
 
 .stars-inner {
@@ -369,7 +383,8 @@ body {
 .bonus-btn{
     background-color: #e4e4e4;
     color: #0071e3;
-    font-size: 30px;
+    font-size: 24px;
+    text-align: center;
     width: 100%;
     text-decoration: none;
     font-weight: 700;

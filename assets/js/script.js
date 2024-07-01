@@ -46,3 +46,7 @@ function openDetailsPopup(e) {
     showPopup();
     console.log(target);
 }
+
+function getLink(e) {
+    e.stopPropagation();
+}
