@@ -88,7 +88,7 @@ body {
 }
 
 .nav-icon {
-    height: 20px;
+    height: 16px;
 }
 
 
@@ -309,6 +309,7 @@ body {
 
 .idp-number{
     flex: 1;
+    gap: 5px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -330,7 +331,7 @@ body {
 }
 
 .idpn-rating{
-    font-size: 30px;
+    font-size: 24px;
     line-height: 100%;
     font-weight: 500;
 }
@@ -381,7 +382,7 @@ body {
     border-right: 0;
 }
 .bonus-btn{
-    background-color: #0071e3;
+    background-color: purple;
     color: #FFFFFF;
     font-size: 20px;
     text-align: center;
