@@ -47,6 +47,7 @@ function openDetailsPopup(e) {
     console.log(target);
 }
 
-function getLink(e) {
-    e.stopPropagation();
+function getLink(link) {
+    // Make the link open in new tab
+    window.open(link, '_blank');
 }
